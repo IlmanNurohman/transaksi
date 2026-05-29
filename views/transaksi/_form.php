@@ -45,19 +45,20 @@ $form = ActiveForm::begin([
             </div>
 
             <!-- Jumlah -->
+            <!-- Jumlah -->
             <div class="col-md-6">
-                <?= $form->field($model, 'amount')->label('Jumlah <span class="text-danger">*</span>', ['encode' => false])
-                    ->begin() ?>
+                <label class="form-label fw-semibold small text-uppercase text-secondary ls-wider">
+                    Jumlah <span class="text-danger">*</span>
+                </label>
                 <div class="input-group">
                     <span class="input-group-text bg-light text-muted small fw-semibold">Rp</span>
                     <?= Html::activeInput('number', $model, 'amount', [
-                        'class' => 'form-control',
-                        'min'   => 0,
-                        'placeholder' => '0',
-                    ]) ?>
+            'class'       => 'form-control',
+            'min'         => 0,
+            'placeholder' => '0',
+        ]) ?>
                 </div>
-                <?= $form->field($model, 'amount')->error() ?>
-                <?= $form->field($model, 'amount')->end() ?>
+                <?= Html::error($model, 'amount', ['class' => 'invalid-feedback d-block']) ?>
                 <div class="form-text">Masukkan nilai dalam rupiah</div>
             </div>
 

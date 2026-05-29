@@ -22,7 +22,7 @@ $fmt = fn(int $n) => 'Rp ' . number_format($n, 0, ',', '.');
 
 <!-- Summary Cards -->
 <div class="row g-3 mb-4">
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-4">
         <div class="card border-0 bg-light h-100">
             <div class="card-body">
                 <p class="text-muted small text-uppercase fw-semibold mb-1" style="letter-spacing:.05em">
@@ -33,7 +33,7 @@ $fmt = fn(int $n) => 'Rp ' . number_format($n, 0, ',', '.');
             </div>
         </div>
     </div>
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-4">
         <div class="card border-0 bg-light h-100">
             <div class="card-body">
                 <p class="text-muted small text-uppercase fw-semibold mb-1" style="letter-spacing:.05em">
@@ -44,18 +44,7 @@ $fmt = fn(int $n) => 'Rp ' . number_format($n, 0, ',', '.');
             </div>
         </div>
     </div>
-    <div class="col-6 col-md-3">
-        <div class="card border-0 bg-light h-100">
-            <div class="card-body">
-                <p class="text-muted small text-uppercase fw-semibold mb-1" style="letter-spacing:.05em">
-                    <i class="bi bi-calendar3 me-1 text-warning"></i>Bulan Ini
-                </p>
-                <p class="fs-4 fw-semibold mb-0"><?= $monthlyCount ?></p>
-                <p class="text-muted small mb-0"><?= $fmt($monthlyAmount) ?> bulan ini</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-6 col-md-3">
+    <div class="col-6 col-md-4">
         <div class="card border-0 bg-light h-100">
             <div class="card-body">
                 <p class="text-muted small text-uppercase fw-semibold mb-1" style="letter-spacing:.05em">
